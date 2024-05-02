@@ -9,15 +9,15 @@ and
 npm start
 ```
 
-Before using This project install latest versions of following packages
+Before using This project install the latest versions of the following packages
 
 - [Axios](https://www.npmjs.com/package/axios)
-- Bootstrap - React Strap - MUI - AntD - Tailwind
+- Tailwind
 - [React Icons](https://react-icons.github.io/react-icons/)
 - React Router Dom [Latest React Router v6](https://reactrouter.com/en/dev/upgrading/reach#install-react-router-v6)
 - Other Required packages
 
-In the project I have just set Up most used folder structure:
+In the project, I have just set up the most used folder structure:
 
 ```javascript
 React JS Advanced Folder Structure

@@ -20,7 +20,7 @@ Before using This project install the latest versions of the following packages
 In the project, I have just set up the most used folder structure:
 
 ```javascript
-React JS Advanced Folder Structure
+React JS Folder Structure
 .
 ├── public
 |     └── index.html
@@ -32,71 +32,71 @@ React JS Advanced Folder Structure
     |     └── videos
     ├── components
     |     ├── Button
-    |     |     ├── index.jsx
-    |     |     └── button.module.css
+    |     |     ├── index.tsx
+    |     |     └── button.css
     |	  ├── inputs
-    |     |     ├── index.jsx
-    |     |     └── inputs.module.css
+    |     |     ├── index.tsx
+    |     |     └── inputs.css
     |	  ├── Modal
-    |     |     ├── index.jsx
-    |     |     └── modal.module.css
+    |     |     ├── index.tsx
+    |     |     └── modal.css
     |	  └── Tooltip
-    |           ├── index.jsx
-    |           └── tooltip.module.css
-    |     └── index.js
+    |           ├── index.tsx
+    |           └── tooltip.css
+    |     └── index.ts
     ├──  db
-    |     ├── productsData.js
-    |     └── userData.js
+    |     ├── productsData.ts
+    |     └── userData.ts
     ├── layout
     |     ├── Header
-    |     |     ├── index.jsx
-    |     |     └── header.module.css
-    |     ├── Navbar.jsx
-    |     |     ├── index.jsx
-    |     |     └── navbar.module.css
-    |     ├── Breadcrumbs.jsx
-    |     |     ├── index.jsx
-    |     |     └── breadcrumbs.module.css
-    |     └── Footer.jsx
-    |           ├── index.jsx
-    |           └── footer.module.css
-    |     └── index.js
+    |     |     ├── index.tsx
+    |     |     └── header.css
+    |     ├── Navbar
+    |     |     ├── index.tsx
+    |     |     └── navbar.css
+    |     ├── Breadcrumbs
+    |     |     ├── index.tsx
+    |     |     └── breadcrumbs.css
+    |     └── Footer
+    |           ├── index.tsx
+    |           └── footer.css
+    |     └── index.ts
     ├── pages
     |     ├── Home
-    |     |     ├── index.jsx
-    |     |     └── home.module.css
+    |     |     ├── index.tsx
+    |     |     └── home.css
     |     ├── Login
-    |     |     ├── index.jsx
-    |     |     └── login.module.css
+    |     |     ├── index.tsx
+    |     |     └── login.css
     |     ├── Signup
-    |     |     ├── index.jsx
-    |     |     └── signup.module.css
+    |     |     ├── index.tsx
+    |     |     └── signup.css
     |     └── About
-    |           ├── index.jsx
-    |           └── about.module.css
-    |     └── index.js
-    ├── Routers
-    |     └── Routers.js
+    |           ├── index.tsx
+    |           └── about.css
+    |     └── index.ts
+    ├── routers
+    |     └── Routers.ts
     ├── store
-    |     ├── action.js  
-    |     ├── reducers.js  
-    |     └── store.js
+    |     ├── action.ts  
+    |     ├── reducers.ts  
+    |     └── store.ts
     ├── services
-    |     ├── api.js          // API request functions
-    |     └── dataUtils.js    // Data manipulation functions
+    |     ├── api.ts          // API request functions
+    |     └── dataUtils.ts    // Data manipulation functions
     ├── utils
     |     ├── constants
-    |     |     ├── Strapi.js
-    |     |     └── Firebase.js
+    |     |     ├── Strapi.ts
+    |     |     └── Firebase.ts
     |     ├── helpers
-    |     |     ├── arrays.js
-    |     |     └── helpers.js
+    |     |     ├── arrays.ts
+    |     |     └── helpers.ts
     |     └── hooks  
-    |           └── useIsMobile.js  
+    |           └── useIsMobile.ts  
     ├── .env
-    ├── app.js
+    ├── app.ts
     ├── index.css
-    ├── index.js
+    ├── index.ts
 |
 ├── .gitignore
 ├── package-lock.json

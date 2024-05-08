@@ -1,4 +1,4 @@
-# React JS Advance-Level Folder Structure
+# SeekEdgar Project Folder Structure
 
 How to run the project
 ```javascript
@@ -6,173 +6,113 @@ npm i
 ```
 and
 ```javascript
-npm start
+npm run dev
 ```
-
-Before using This project install the latest versions of the following packages
-
-- [Axios](https://www.npmjs.com/package/axios)
-- Tailwind
-- [React Icons](https://react-icons.github.io/react-icons/)
-- React Router Dom [Latest React Router v6](https://reactrouter.com/en/dev/upgrading/reach#install-react-router-v6)
-- Other Required packages
-
 In the project, I have just set up the most used folder structure:
 
 ```javascript
-React JS Folder Structure
+SeekEdgar Project Folder Structure
 .
 ├── public
-|     └── index.html
 ├── src
     ├── assets
-    |     ├── audios
     |     ├── icons
     |     ├── images
     |     └── videos
     ├── components
     |     ├── Button
     |     |     ├── index.tsx
-    |     |     └── button.css
+    |     |     └── button.module.css
     |	  ├── inputs
     |     |     ├── index.tsx
-    |     |     └── inputs.css
+    |     |     └── inputs.module.css
     |	  ├── Modal
     |     |     ├── index.tsx
-    |     |     └── modal.css
+    |     |     └── modal.module.css
     |	  └── Tooltip
     |           ├── index.tsx
-    |           └── tooltip.css
+    |           └── tooltip.module.css
     |     └── index.ts
-    ├──  db
-    |     ├── productsData.ts
-    |     └── userData.ts
     ├── layout
     |     ├── Header
     |     |     ├── index.tsx
-    |     |     └── header.css
+    |     |     └── header.module.css
     |     ├── Navbar
     |     |     ├── index.tsx
-    |     |     └── navbar.css
-    |     ├── Breadcrumbs
-    |     |     ├── index.tsx
-    |     |     └── breadcrumbs.css
+    |     |     └── navbar.module.css
     |     └── Footer
     |           ├── index.tsx
-    |           └── footer.css
+    |           └── footer.module.css
     |     └── index.ts
     ├── pages
     |     ├── Home
     |     |     ├── index.tsx
-    |     |     └── home.css
+    |     |     └── home.module.css
     |     ├── Login
     |     |     ├── index.tsx
-    |     |     └── login.css
+    |     |     └── login.module.css
     |     ├── Signup
     |     |     ├── index.tsx
-    |     |     └── signup.css
-    |     └── About
-    |           ├── index.tsx
-    |           └── about.css
+    |     |     └── signup.module.css
     |     └── index.ts
-    ├── routers
-    |     └── Routers.ts
-    ├── store
-    |     ├── action.ts  
-    |     ├── reducers.ts  
-    |     └── store.ts
     ├── services
-    |     ├── api.ts          // API request functions
-    |     └── dataUtils.ts    // Data manipulation functions
+    |     ├── apiInterceptor.ts          // API request functions
+    |     └── authService.ts
+    ├── styles
+    |     ├── styles.css  
     ├── utils
     |     ├── constants
-    |     |     ├── Strapi.ts
-    |     |     └── Firebase.ts
-    |     ├── helpers
-    |     |     ├── arrays.ts
-    |     |     └── helpers.ts
-    |     └── hooks  
+    |     |     ├── apiUrlConstants.ts
+    |     |     └── commonConstant.ts
+    |     |     └── index.ts
+    |     └── hooks   
     |           └── useIsMobile.ts  
     ├── .env
-    ├── app.ts
-    ├── index.css
-    ├── index.ts
+    ├── favicon.ico
+    ├── globals.css
+    ├── layout.tsx
+    ├── page.tsx
 |
 ├── .gitignore
+├── next.env.d.ts
+├── next.config.mjs
 ├── package-lock.json
 ├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
 └── README.md
 ```
 
 ## Folders include
 
-- `Public`
-- `Assests`
-- `Components`
-- `db`
+- `public`
+- `assets`
+- `components`
 - `layout`
-- `Pages`
-- `Routes`
+- `pages`
 - `services`
-- `store`
 - `utils`
-  - `Constants`
-  - `helpers`
+  - `constants`
   - `hooks`
 - `.env.example` / `.env.development`
-- `.eslintrc.cjs`
-- `.prettierrc.cjs`
-- `.jsonconfig.json`
+- `next.env.d.ts`
+- `next.config.mjs`
 - `.gitignore`
 - `package.json`
-- `.vite.config.js`
-
-### Public
-
-Public mainly contain root file **`index.html`** which help to run react project.
+- `tailwind.config.js`
+- `tsconfig.json`
 
 ### Assests
 
 In Assets folder you can put following things.
 
+- Icons
 - Images
 - Video
-- Icons
-- CSS
 
 ### Components
 
 Component will have all the components which are reuseable anywhere in website. Like - Button - Cards - DropDownBtn - inputs - Modal - Popups - Toast - Tooltip - Text/Heading/Title - Skeleton - Spiner/Loader
-
-### Constants
-
-Constants folder have **Tokens,** logins, and those details which we don't want to share with public. Like **Env** files are used to store sensitive credentials such as **API keys.**
-An environment variable supports storing the API link at one location so that we do not need to change the Link in each file manually.
-
-```javascript
-const API_BASE_URL = 'https://api.example.com';
-const MAX_ITEMS_PER_PAGE = 10;
-```
-
-### db
-
-Here we provide JSON Formate of data in frontend in React APP.
-
-- products data
-- users data
-
-### Helpers
-
-Helpers used to store utility functions and modules that provide various helper functionalities. These functions are usually small, reusable, and not directly tied to the main business logic of your application.
-
-- Array to Object
-- Object to Array
-- Date Formatting
-- Number Formatting
-- Validation
-- Api Request
-
-[Helper Functions Details](https://chat.openai.com/share/32e7459b-dd5a-495a-a418-db2453361370)
 
 ### Layout
 
@@ -188,31 +128,16 @@ This is just a special folder for **placing any layout based components.**
 
 Pages will have all the pages which we will use in website.
 
-### Routes
-
-Router will have all the Routes in website. Where we are going and where we want to go.
-
 ### Services
 
 In Services we put configuration file, like when you are using google firebase then your firebase config file will be in services folder.
 
 The **"services"** folder is often used to contain code related to making **\*`API`** requests and managing data from external sources. This folder helps separate the concerns of your application by isolating data fetching and manipulation logic from the components that render the UI.
 
-```javascript
-// services/apiService.js
-import axios from 'axios';
-
-export function fetchUserData(userId) {
-  return axios.get(`/api/users/${userId}`);
-}
-```
-
 ### Store
-"store" folder in a React application typically refers to a directory where you manage your application's state using state management libraries like 
+The "store" folder in a React application typically refers to a directory where you manage your application's state using state management libraries like 
 - Redux 
 - Redux Toolkit
-- Zustand
-- Context Api
 - Mobx
 
 ```javascript
@@ -286,7 +211,7 @@ module.exports = {
 };
 ```
 
-### jscongig.json
+### tsconfig.json
 
 - File Purpose
 - Configuration Setup:
@@ -307,59 +232,30 @@ module.exports = {
 
 package.json file is core to the Nodejs ecosystem and is a fundamental part of understanding and working with Node. js , npm , and even modern JavaScript . This file is used as a manifest, storing information about applications, modules, packages, and more.
 
-### vite.config.js
+### tailwind.config.js
 
 - File Purpose:
-The vite.config.js file allows you to customize various aspects of your Vite project, including configuration options for the development server, build process, and plugin settings.
-
-- Configuration Setup:
-Inside the vite.config.js file, you export an object containing the configuration options for your Vite project. This object can include settings related to the development server, build process, plugins, and more.
-
-- JavaScript Format:
-The vite.config.js file is written in JavaScript, and it's named vite.config.js. It should be placed in the root directory of your Vite project.
+The tailwind.config.js file is used to configure Tailwind CSS, a utility-first CSS framework. It allows you to customize various aspects of Tailwind CSS such as colors, fonts, spacing, breakpoints, and more.
 
 ```javascript
-// vite.config.js
-export default {
-  server: {
-    port: 3000
+// tailwind.config.js
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+    },
   },
-  build: {
-    minify: true
-  },
-  plugins: [/* your plugins here */]
+  plugins: [],
 };
 ```
 
-@import 
-```javascript
-export default defineConfig({
-  resolve: {
-    alias: {
-      '@': '/src',
-      '@page': '/src/page'
-    }
-  },
-  plugins: [react()],
-})
-```
-
-**2nd Method**
-
-```javascript
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { resolve } from 'path';
-
-const alias = {
-  // eslint-disable-next-line no-undef
-  '@': resolve(__dirname, './src'),
-};
-
-export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias,
-  },
-})
-```

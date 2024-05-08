@@ -8,7 +8,7 @@ and
 ```javascript
 npm run dev
 ```
-In the project, I have just set up the most used folder structure:
+In the project, I have just set up the most used folder structure (Not yet finalised):
 
 ```javascript
 SeekEdgar Project Folder Structure
@@ -58,12 +58,16 @@ SeekEdgar Project Folder Structure
     ├── services
     |     ├── apiInterceptor.ts          // API request functions
     |     └── authService.ts
+    ├── store
+    |     ├── actions.ts 
+    |     ├── reducers.ts  
+    |     └── store.ts 
     ├── styles
-    |     ├── styles.css  
+    |     └── styles.css  
     ├── utils
     |     ├── constants
     |     |     ├── apiUrlConstants.ts
-    |     |     └── commonConstant.ts
+    |     |     ├── commonConstant.ts
     |     |     └── index.ts
     |     └── hooks   
     |           └── useIsMobile.ts  
@@ -142,9 +146,9 @@ The "store" folder in a React application typically refers to a directory where 
 
 ```javascript
 |-- store/
-|   |-- actions.js        // Redux action creators
-|   |-- reducers.js       // Redux reducers
-|   |-- store.js          // Redux store configuration
+|   |-- actions.ts        // Redux action creators
+|   |-- reducers.ts       // Redux reducers
+|   |-- store.ts          // Redux store configuration
 ```
 
 ### Utils
@@ -156,12 +160,12 @@ The "store" folder in a React application typically refers to a directory where 
 
 Example: 
 ```javascript
-// utils/stringUtils.js
+// utils/stringUtils.ts
 export function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// utils/dateUtils.js
+// utils/dateUtils.ts
 export function formatDate(date) {
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   return new Date(date).toLocaleDateString(undefined, options);
@@ -235,10 +239,10 @@ package.json file is core to the Nodejs ecosystem and is a fundamental part of u
 ### tailwind.config.js
 
 - File Purpose:
-The tailwind.config.js file is used to configure Tailwind CSS, a utility-first CSS framework. It allows you to customize various aspects of Tailwind CSS such as colors, fonts, spacing, breakpoints, and more.
+The tailwind.config.ts file is used to configure Tailwind CSS, a utility-first CSS framework. It allows you to customize various aspects of Tailwind CSS such as colors, fonts, spacing, breakpoints, and more.
 
 ```javascript
-// tailwind.config.js
+// tailwind.config.ts
 
 const config: Config = {
   content: [
@@ -259,3 +263,23 @@ const config: Config = {
 };
 ```
 
+## Tech Stacks
+- Next.JS: 14.2.3
+- Node: 22.1.0
+- React: 18
+- React Icons: 5.2.1
+- Axios: 1.6.8,
+- Mobx: 6.12.3,
+- TailwindCSS: 3.4.1,
+- Typescript: 5
+- Prettier: 3.2.5
+- ESlint: 8
+
+## Learn More
+
+To learn more about Next.js, Tailwind CSS and Mobx, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [TailwindCSS](https://tailwindcss.com/docs/installation) - Get started with Tailwind CSS
+- [Mobx.js](https://mobx.js.org/) - learn about Mobx.js
